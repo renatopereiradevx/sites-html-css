@@ -1,0 +1,577 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: yellow;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* NAV */
+nav {
+    height: 100%;
+    width: 350px;
+    background-color: black;
+    position: fixed; /* Fixa o menu na tela */
+    left: 0;
+    top: 0;
+}
+
+nav .interface {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* FIM NAV */
+
+
+/* LOGOTIPO */
+nav .interface .logotipo {
+    color: white;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+nav .interface .logotipo span {
+    color: orange;
+}
+/* FIM LOGOTIPO */
+
+
+/* MENU */
+nav .interface .menu {
+    margin-bottom: 150px;
+}
+
+.interface ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interface ul li a {
+    text-decoration: none;
+    color: #828181;
+    width: 100%;
+    display: block;
+    height: 100px;
+    align-content: center;
+    font-size: 18px;
+    margin: 0 4%;
+    transition: .5s;
+}
+
+.interface ul li:hover a {
+    color: orange;
+    font-size: 21px;
+}
+
+.interface ul li a i{
+    font-size: 30px;
+    margin: 0 15px;
+    transition: .7s;
+}
+
+.interface ul li:hover a i {
+    font-size: 35px;
+}
+/* FIM MENU */
+
+/* BOTÃO SAIR */
+nav .interface .sair {
+    background-color: #ffa50099;
+    color: white;
+    width: 100%;
+    border: 0;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 700;
+    transition: .7s;
+}
+
+nav .interface .sair a {
+    height: 100%;
+    font-size: 18px;
+    padding: 0 4% 0 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+nav .interface .sair a:hover {
+    font-size: 20px;
+    box-shadow: 0 0 15px orange;
+}
+
+nav .interface .sair a i {
+    font-size: 35px;
+    margin: 0 15px;
+    transition: .3s;
+}
+
+nav .interface .sair a:hover i {
+    font-size: 40px;
+}
+
+/* FIM BOTÃO SAIR */
+
+
+/* MAIN */
+main {
+    background-color: gray;
+    width: calc(100% - 350px); /* Garante que o conteúdo ocupe o restante da tela */
+    margin-left: 350px; /* Empurra o conteúdo para a direita */
+}
+
+main .interface section {
+    background-color: rgb(37, 36, 36);
+    width: 100%;
+    min-height: 100vh;
+}
+
+main section .container {
+    padding: 20px 4%;
+    color: #ccc;
+}
+
+main section .container .title {
+    font-weight: 700;
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+main section .container .title span {
+    color: orange !important;
+}
+
+main section .container .subtitle {
+    margin: 0 0 50px 0;
+}
+/* FIM MAIN */
+
+/* SECTION IICIO */
+
+section .box-inicio {
+    position: relative;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    /* background-color: white; */
+}
+
+section .box-inicio .image-inicio {
+    width: 250px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+section .box-inicio .image-inicio img {
+    width: 100%;
+    border-radius: 30% 10px;
+}
+
+section .box-inicio .description-inicio {
+    max-width: 60%;
+    flex-grow: 2;
+    margin-top: 80px;
+}
+
+section .box-inicio .description-inicio .title {
+    margin-bottom: 50px;
+}
+
+section .box-inicio .description-inicio P {
+    text-align: justify;
+}
+
+section .box-inicio .box-solucoes {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 40px;
+    justify-content: flex-start;
+    margin: 50px 0;
+}
+
+section .box-inicio .box-solucoes .solucao-item {
+    width: 180px;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 15px 10px;
+    transition: 1s;
+}
+
+.box-solucoes .solucao-item:hover {
+    transform: translateY(-20px);
+}
+
+.box-solucoes .solucao-item i {
+    font-size: 80px;
+    color: orange;
+}
+
+.box-solucoes .solucao-item h3 {
+    margin: 20px 0;
+    color: white;
+}
+
+.box-solucoes .solucao-item p {
+    text-align: left;
+}
+
+.description-inicio .btn-contato a {
+    background-color: orange;
+    color: white;
+    padding: 20px 35px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    transition: 1s;
+}
+
+.description-inicio .btn-contato a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px orange;
+}
+
+/* FIM SECTION INICIO */
+
+
+/* SECTION SKILL */
+section #skills {
+    text-align: center;
+}
+
+section .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gap: 30px; */
+}
+
+section .container .box-skills {
+    gap: 15px;
+}
+
+
+
+section .box-skills .skill-item {
+    background-color: white;
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+    opacity: 1;
+    transition: 1s;
+}
+
+section .box-skills:hover > .skill-item:hover {
+    box-shadow: 0 0 15px orange;
+}
+
+section .box-skills:hover > :not(:hover)  {
+    cursor: pointer;
+    opacity: .4;
+    transform: scale(.7);
+}
+/* FIM SECTION SKILL */
+
+
+/* SECTION SOBRE */
+section #sobre {
+    padding: 50px 0;
+}
+
+section .box-sobre {
+    gap: 80px;
+}
+
+.box-sobre .image-sobre {
+    width: 250px;
+}
+
+.box-sobre .image-sobre img {
+    width: 100%;
+    border-radius: 50px 10px;
+}
+
+.box-sobre .description-sobre {
+    width: 500px;
+    text-align: justify;
+}
+
+.box-sobre .description-sobre .title {
+    margin-bottom: 30px;
+}
+
+.box-sobre .description-sobre .redes {
+    margin: 30px 15px;
+}
+
+.description-sobre .redes a {
+    font-size: 35px;
+    margin-right: 15px;
+    cursor: pointer;
+    color: orange;
+    display: inline-block;
+    transition: 1s;
+}
+
+.description-sobre .redes a:hover {
+    transform: scale(1.3);
+}
+
+.description-sobre .btn-contato a {
+    background-color: orange;
+    color: white;
+    padding: 20px 35px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 15px;
+    transition: 1s;
+}
+
+.description-sobre .btn-contato a:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px orange;
+}
+
+/* FIM SECTION SOBRE */
+
+
+/* PORTFOLIO */
+section .box-portfolio {
+    justify-content: flex-start;
+    margin: 80px 0;
+    gap: 20px;
+}
+
+.box-portfolio .portfolio-item {
+    position: relative;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.box-portfolio .portfolio-item .legend {
+    position: absolute;
+    background: black;
+    color: #ccc;
+    padding: 10px;
+    font-size: 13px;
+    bottom: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+
+}
+
+.box-portfolio .portfolio-item:hover {
+    transform: scale(1.1);
+}
+
+.box-portfolio .portfolio-item:hover .legend {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* FIM PORTFOLIO */
+
+/* TABLET */
+@media (min-width: 521px) and (max-width: 1024px) {
+    nav {
+        width: 80px;
+        transition: .7s;
+        z-index: 1;
+    }
+
+    nav:hover {
+        width: 300px;
+    }
+
+    nav:hover .interface .logotipo,
+    nav:hover .interface .logotipo span {
+        display: inline;
+        font-size: 25px;
+    }
+
+    nav:hover .interface .menu li {
+        text-align: left;
+    }
+
+    nav:hover .interface .menu li span,
+    nav:hover .interface .sair span {
+        display: inline-block;
+    }
+
+    nav .interface .menu li,
+    nav .interface .sair a {
+        text-align: center;
+        transition: .3s;
+    }
+
+    nav .interface .logotipo span,
+    nav .interface .menu li span,
+    nav .interface .sair a span {
+        display: none;
+    }
+
+    main {
+        width: calc(100% - 80px);
+        margin-left: 80px;
+    }
+
+    section .box-inicio .description-inicio {
+        max-width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    section .box-inicio .image-inicio {
+        text-align: center;
+    }
+
+    section .box-inicio .image-inicio img {
+        width: 60%;
+    }
+
+    .box-solucoes {
+        flex-wrap: wrap;
+    }
+
+
+    section .box-sobre {
+        gap: 30px;
+    }
+
+    section .box-portfolio .portfolio-item {
+        width: 230px;
+        height: 230px;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 520px) {
+
+    /* NAV GERAL */
+    nav {
+        width: 60px;
+        transition: .7s;
+    }
+
+    nav:hover {
+        width: 60px;
+    }
+
+    nav .interface .logotipo span,
+    nav .interface .sair a span {
+        display: none;
+    }
+
+    nav .interface .menu li a i,
+    nav .interface .sair a i{
+        font-size: 25px;
+    }
+    /* FIM NAV */
+
+    /* LOGOTIPO */
+    nav .interface .logotipo {
+        font-size: 16px;
+    }
+    /* FIM LOGOTIPO */
+
+    /* MENU */
+    nav .interface .menu {
+        margin-bottom: 80px;
+    }
+
+    nav .interface .menu li span {
+        display: block;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    nav .interface .menu li:hover a i {
+        font-size: 35px;
+    }
+    /* FIM MENU */
+    
+
+    /* MENU */
+    main {
+        width: calc(100% - 60px);
+        margin-left: 60px;
+    }
+    /* FIM MENU */
+
+    p {
+        font-size: 13px;
+    }
+
+    .title {
+        font-size: 20px !important;
+    }
+
+    section .box-inicio .description-inicio,
+    section .box-inicio .description-inicio .title {
+        max-width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    section .box-inicio .image-inicio {
+        text-align: center;
+    }
+
+    .box-solucoes {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+
+    .box-solucoes .solucao-item {
+        width: 90% !important;
+    }
+
+    .box-solucoes .solucao-item  i {
+        font-size: 30px;
+    }
+
+    .box-solucoes .solucao-item  h3 {
+        font-size: 14px;
+    }
+
+    .btn-contato  a {
+        padding: 10px 20px !important;
+        margin-bottom: 15px;
+    }
+
+    section #skills p {
+        text-align: justify;
+    }
+
+    section #sobre .box-sobre {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    section .box-portfolio {
+        width: 100%;
+    }
+
+    section .box-portfolio {
+        justify-content: center !important;
+    }
+
+}
