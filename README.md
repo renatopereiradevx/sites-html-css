@@ -3,4 +3,4 @@ Sites para praticar HTML e CSS (Básico ao Avançado)
 
 
 
-**Site 1**:  https://renatopereiradevx.github.io/sites-html-css/
+**Site 1**:  https://renatopereiradevx.github.io/sites-html-css/site-1
